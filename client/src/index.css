@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'sofia-regular';
+    /* Choose a name for your font */
+    src: url('Sofia Pro Regular Az.otf') format('opentype');
+    /* Path to your font file */
+    /* You can add additional font properties here */
+}
+
+@font-face {
+    font-family: 'sofia-medium';
+    /* Choose a name for your font */
+    src: url('Sofia Pro Medium Az.otf') format('opentype');
+    /* Path to your font file */
+    /* You can add additional font properties here */
+}
+
+@font-face {
+    font-family: 'sofia-light';
+    /* Choose a name for your font */
+    src: url('Sofia Pro Light Az.otf') format('opentype');
+    /* Path to your font file */
+    /* You can add additional font properties here */
+}
+
+
+
+
+* {
+    font-family: 'sofia-light';
+    font-size: 1.05rem;
+
+}
+
+body {
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'sofia-medium', Times, serif;
+
+}
+
+.ql-editor {
+    font-size: 1.05rem;
+}
+
+
+.post-content p {
+    margin-bottom: 0.5rem;
+}
+
+.post-content h1 {
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    font-family: 'sofia-medium';
+    margin: 1.5rem 0;
+}
+
+.post-content h2 {
+    font-size: 1.4rem;
+    font-family: 'sofia-medium';
+    margin: 1.5rem 0;
+}
+
+.post-content a {
+    color: rgb(73, 149, 199);
+    text-decoration: none;
+}
+
+.post-content a:hover {
+    text-decoration: underline;
+}
+
+.dark .post-content a {
+    color: red;
+}
+
+@media only screen and (max-width: 430px) {
+
+    /* CSS rules for mobile screens */
+    .smallwrapper {
+        width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+        /* Additional styles for mobile */
+    }
+}
+
+
+.slide-up {
+    overflow: hidden;
+    animation: slideUp 2.5s ease, fadeIn 1.5s ease;
+}
+
+.slide-up2 {
+    overflow: hidden;
+    animation: slideUp 2.5s ease, fadeIn 1.5s ease;
+}
+
+.slide-up3 {
+    overflow: hidden;
+    animation: slideUp 2.5s ease, fadeIn 1.5s ease;
+}
+
+.text-slide {
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(1000px);
+    }
+
+
+
+
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+
+    75% {
+        opacity: 0.3;
+    }
+
+    85% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
